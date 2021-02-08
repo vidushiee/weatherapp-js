@@ -1,3 +1,3 @@
 # weather-app
 
-Using Vanilla JS. Detectes your geographical location to give the exact temperature.
+Using Vanilla JS. Detects your geographical location to give the exact temperature.
