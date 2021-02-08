@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+
+:root{
+    --grad1:#1D4ED8; 
+    --grad2:#60A5FA; 
+    --col1:#EDE9FE;
+    --text-color:#0a0a0a;
+
+
+
+}
+body{
+    font-family: 'Yusei Magic', sans-serif;
+    background-color:var(--grad1);
+    height:100vh;
+    background: linear-gradient(var(--grad1),var(--grad2));
+    align-items: center;
+    display: flex;
+    justify-content: center; /*center aligns the content as a counter actionto  the display flex puts them on the same line */
+    flex-direction: column; /*puts the elements in the center https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */
+    color: var(--text-color);
+}
+.container{
+    border: 2.5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(53, 31, 31, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--col1);
+
+}
+ /* @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+ *{
+    font-family:'Yusei Magic', sans-serif;
+}
+
+body{
+    background-color: #293251;
+}
+
+.container{
+    width: 300px;    
+    background-color: #FFF;
+    
+    display: block;
+    margin: 0 auto;
+    
+    border-radius: 10px;
+    padding-bottom : 50px;
+}
+
+
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+} */
+.app-title{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.6em;
+    color: #293251;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* .weather-container{
+    width: 300px;
+    height: 560px;
+} */
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+    color:var(--text-color);
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+    
+}
+
+.temperature-value span{
+    color:var(--text-color);
+    font-size: 0.5em;
+}
+
+.temperature-description{
+    
+}
+
+.temperature-description p{
+    /* padding: 18px; */
+    color:var(--text-color);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location{
+    
+}
+
+.location p{
+    padding: 18px;
+    color:var(--text-color);
+    text-align: center;
+    font-size: 1.8em;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: sticky;
+    z-index: 1;
+    bottom: 20%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 0.8rem;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
